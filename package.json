@@ -1,0 +1,53 @@
+{
+  "name": "restfull-react-with",
+  "version": "1.0.0",
+  "description": "restful-react-with is a simple wrapper that extends restful-react to visually separate the logic of REST queries from the component itself.",
+  "main": "dist/main.js",
+  "repository": "https://github.com/aliev/restful-react-with",
+  "author": "Ali Aliev",
+  "license": "MIT",
+  "scripts": {
+    "test": "jest",
+    "build": "webpack",
+    "start": "webpack --watch"
+  },
+  "dependencies": {
+    "@babel/plugin-proposal-class-properties": "^7.5.5",
+    "@babel/plugin-proposal-object-rest-spread": "^7.5.5",
+    "@babel/plugin-transform-runtime": "^7.6.0",
+    "@babel/preset-env": "^7.6.0",
+    "@babel/preset-react": "^7.0.0",
+    "babel": "^6.23.0",
+    "babel-eslint": "^10.0.3",
+    "babel-loader": "^8.0.6",
+    "babel-plugin-named-asset-import": "^0.3.4",
+    "enzyme": "^3.10.0",
+    "enzyme-adapter-react-16": "^1.14.0",
+    "eslint": "^6.4.0",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "hoist-non-react-statics": "^3.3.0",
+    "jest": "^24.9.0",
+    "prop-types": "^15.7.2",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0",
+    "restful-react": "^7.1.1",
+    "webpack": "^4.40.2"
+  },
+  "peerDependencies": {
+    "hoist-non-react-statics": "^3.3.0",
+    "react": "^16.9.0",
+    "restful-react": "^7.1.1"
+  },
+  "jest": {
+    "transformIgnorePatterns": [
+      "node_modules/(?!(restful-react)/).+\\.js$"
+    ],
+    "setupFilesAfterEnv": [
+      "<rootDir>/src/setupTests.js"
+    ],
+    "collectCoverage": true
+  },
+  "devDependencies": {
+    "webpack-cli": "^3.3.9"
+  }
+}
