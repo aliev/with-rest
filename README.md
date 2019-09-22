@@ -119,6 +119,7 @@ const withMoviesList = withRest(Get)({
 });
 
 const withMoviesDelete = withRest(Mutate)({
+    path: (props) => '/movies',
     verb: 'DELETE',
     propName: 'moviesDelete',
 });
