@@ -73,9 +73,6 @@ export default compose(
 );
 ```
 
-More examples here: https://github.com/contiamo/restful-react/blob/master/README.md
-
-
 Rewritten [Mutate](https://github.com/contiamo/restful-react#mutations-with-mutate) example:
 
 ```JavaScript
@@ -130,3 +127,5 @@ export default compose(
 )
 
 ```
+
+More examples here: https://github.com/contiamo/restful-react/blob/master/README.md
