@@ -83,7 +83,7 @@ Rewritten [Mutate](https://github.com/contiamo/restful-react#mutations-with-muta
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import Get from 'restful-react';
+import Get, {Mutate} from 'restful-react';
 import { compose } from "recompose";
 import { withRest } from 'restfull-react-with';
 
