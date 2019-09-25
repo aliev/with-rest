@@ -6,6 +6,20 @@
   "repository": "https://github.com/aliev/with-rest",
   "author": "Ali Aliev",
   "license": "MIT",
+  "files": [
+    "dist"
+  ],
+  "keywords": [
+    "rest",
+    "restful",
+    "react",
+    "react-component",
+    "fetch",
+    "data fetching",
+    "with rest",
+    "apollo rest",
+    "restful react"
+  ],
   "scripts": {
     "test": "jest",
     "build": "webpack",
@@ -32,9 +46,9 @@
     "eslint-config-airbnb-base": "^14.0.0",
     "jest": "^24.9.0",
     "prop-types": "^15.7.2",
+    "react-dom": "^16.9.0",
     "webpack": "^4.40.2",
-    "webpack-cli": "^3.3.9",
-    "react-dom": "^16.9.0"
+    "webpack-cli": "^3.3.9"
   },
   "peerDependencies": {
     "hoist-non-react-statics": "^3.3.0",
