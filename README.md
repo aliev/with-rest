@@ -1,6 +1,6 @@
 # with-rest
 
-Inspired by the [react-apollo](https://www.apollographql.com/docs/react/api/react-apollo/) syntax, this simple wrapper extends [restfull-react](https://github.com/contiamo/restful-react) and allowing to visually separate the logic of REST queries from the component itself.
+Inspired by the [react-apollo](https://www.apollographql.com/docs/react/api/react-apollo/) syntax, this simple wrapper extends [restful-react](https://github.com/contiamo/restful-react) and allowing to visually separate the logic of REST queries from the component itself.
 
 ## Getting Started
 
@@ -38,7 +38,7 @@ const withRandomImage = withRest(Get)({
     propName: 'randomImageResponse',
 });
 
-export default withRandom(withRandomImage)
+export default withRandomImage(RandomImageComponent)
 
 ```
 
@@ -74,7 +74,7 @@ const withTrendingRepos = withRest(Get)({
 export default compose(
     withRandomImage,
     withTrendingRepos,
-);
+)(RandomImageComponent);
 ```
 
 Rewritten example from: [Mutate](https://github.com/contiamo/restful-react#mutations-with-mutate)
@@ -127,7 +127,7 @@ const withMoviesDelete = withRest(Mutate)({
 export default compose(
     withMoviesList,
     withMoviesDelete,
-)
+)(Movies)
 ```
 
 More examples here: https://github.com/contiamo/restful-react/blob/master/README.md
