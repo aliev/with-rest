@@ -1,17 +1,21 @@
-## Overview
+# with-rest
 
 Inspired by the [react-apollo](https://www.apollographql.com/docs/react/api/react-apollo/) syntax, this simple wrapper extends [restfull-react](https://github.com/contiamo/restful-react) and allowing to visually separate the logic of REST queries from the component itself.
 
+## Getting Started
+
+To install and use this library, simply `yarn add with-rest`, or `npm i with-rest --save` and you should be good to go. Don't forget to `import { withRest } from "with-rest"` or similar wherever you need it!
+
 ## Examples
 
-Wrap component with `withRest`
+Example how to wrap component with `withRest`:
 
-```JavaScript
+```jsx
 import React from 'react';
 import PropTypes from 'prop-types';
 
 import Get from 'restful-react';
-import { withRest } from 'restfull-react-with';
+import { withRest } from 'with-rest';
 
 class RandomImageComponent extends React.Component {
     render() {
@@ -38,15 +42,15 @@ export default withRandom(withRandomImage)
 
 ```
 
-Using [Recompose](https://github.com/acdlite/recompose)
+Wrap multiple components using [Recompose](https://github.com/acdlite/recompose)
 
-```JavaScript
+```jsx
 import React from 'react';
 import PropTypes from 'prop-types';
 
 import Get from 'restful-react';
 import { compose } from "recompose";
-import { withRest } from 'restfull-react-with';
+import { withRest } from 'with-rest';
 
 class RandomImageComponent extends React.Component {
     ...
@@ -73,16 +77,15 @@ export default compose(
 );
 ```
 
-Rewritten [Mutate](https://github.com/contiamo/restful-react#mutations-with-mutate) example:
+Rewritten example from: [Mutate](https://github.com/contiamo/restful-react#mutations-with-mutate)
 
-```JavaScript
-
+```jsx
 import React from 'react';
 import PropTypes from 'prop-types';
 
 import Get, { Mutate } from 'restful-react';
 import { compose } from "recompose";
-import { withRest } from 'restfull-react-with';
+import { withRest } from 'with-rest';
 
 class Movies extends React.Component {
     render() {
@@ -125,7 +128,6 @@ export default compose(
     withMoviesList,
     withMoviesDelete,
 )
-
 ```
 
 More examples here: https://github.com/contiamo/restful-react/blob/master/README.md
