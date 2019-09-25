@@ -1,9 +1,9 @@
 {
-  "name": "restfull-react-with",
+  "name": "with-rest",
   "version": "1.0.0",
-  "description": "restful-react-with is a simple wrapper that extends restful-react to visually separate the logic of REST queries from the component itself.",
+  "description": "with-rest is a simple wrapper that extends restful-react to visually separate the logic of REST queries from the component itself.",
   "main": "dist/main.js",
-  "repository": "https://github.com/aliev/restful-react-with",
+  "repository": "https://github.com/aliev/with-rest",
   "author": "Ali Aliev",
   "license": "MIT",
   "scripts": {
