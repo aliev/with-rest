@@ -7,12 +7,15 @@ export const withRest = (RestComponent) => (args) => (WrappedComponent) => {
       const {
         path,
         propName,
+        render = (component, props, propName, args) => (
+          <WrappedComponent {...props} {...{ [propName]: args }} />
+        ),
         ...restComponentProps
       } = args;
 
       return (
         <RestComponent {...restComponentProps} path={path(this.props)}>
-          {(...args) => <WrappedComponent {...this.props} {...{ [propName]: args }} />}
+          {(...args) => render(WrappedComponent, this.props, propName, args)}
         </RestComponent>
       );
     }
